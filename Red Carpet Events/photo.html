@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo(r).png" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About Us</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <img src="h0.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <p>"Every moment captured tells a story. Let us help you create and preserve those unforgettable memories."</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-category">
+            <h2><a href="javascript:void(0)" onclick="openModal('event')">Events</a></h2>
+            <div class="gallery-images">
+                <a href="javascript:void(0)" onclick="openModal('event')"><img src="et1.png" alt="Events Image 1"></a>
+                <a href="javascript:void(0)" onclick="openModal('event')"><img src="et2.jpg" alt="Events Image 2"></a>
+                <a href="javascript:void(0)" onclick="openModal('event')"><img src="et3.jpg" alt="Events Image 3"></a>
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h2><a href="javascript:void(0)" onclick="openModal('wedding')">Wedding</a></h2>
+            <div class="gallery-images">
+                <a href="javascript:void(0)" onclick="openModal('wedding')"><img src="w1.jpeg" alt="Wedding Image 1"></a>
+                <a href="javascript:void(0)" onclick="openModal('wedding')"><img src="w2.webp" alt="Wedding Image 2"></a>
+                <a href="javascript:void(0)" onclick="openModal('wedding')"><img src="w3.webp" alt="Wedding Image 3"></a>
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h2><a href="javascript:void(0)" onclick="openModal('seminar')">Seminar</a></h2>
+            <div class="gallery-images">
+                <a href="javascript:void(0)" onclick="openModal('seminar')"><img src="se1.jpg" alt="Seminar Image 1"></a>
+                <a href="javascript:void(0)" onclick="openModal('seminar')"><img src="se2.jpeg" alt="Seminar Image 2"></a>
+                <a href="javascript:void(0)" onclick="openModal('seminar')"><img src="se3.jpg" alt="Seminar Image 3"></a>
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h2><a href="javascript:void(0)" onclick="openModal('conference')">Conferences</a></h2>
+            <div class="gallery-images">
+                <a href="javascript:void(0)" onclick="openModal('conference')"><img src="co1.jpeg" alt="Conference Image 1"></a>
+                <a href="javascript:void(0)" onclick="openModal('conference')"><img src="co2.jpg" alt="Conference Image 2"></a>
+                <a href="javascript:void(0)" onclick="openModal('conference')"><img src="co3.jpg" alt="Conference Image 3"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="logo(r).png" alt="Logo" class="footer-logo">
+        <p>@redcarpetevents</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <div id="modalImages" class="modal-images"></div>
+        </div>
+    </div>
+
+    <script src="photo.js"></script>
+</body>
+</html>

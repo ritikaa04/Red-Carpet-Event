@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    background-image: url('bg1.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-item a.active {
+    border-bottom: 2px solid #333;
+}
+
+.login-button {
+    background-color: #B40000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 82px); /* Adjust height to account for header and footer */
+    background-color: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent overlay */
+    padding-top: 100px; /* Space for fixed header */
+    padding-bottom: 82px; /* Space for footer */
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.login-form .forgot-password {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-form .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    background-color: #B40000;
+}
+
+.google-login {
+    background-color: #000000;
+}
+
+footer {
+    background-color: #B40000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.footer-logo {
+    height: 50px;
+}

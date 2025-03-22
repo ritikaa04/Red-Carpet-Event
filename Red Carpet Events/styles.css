@@ -1,0 +1,538 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-item a.active {
+    border-bottom: 2px solid #333;
+}
+
+.login-button {
+    background-color: #B40000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 707.93px;
+    object-fit: cover;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.carousel-text h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: 900px;
+}
+
+.carousel-text .button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.carousel .slide {
+    display: none;
+}
+
+.carousel .slide.active {
+    display: block;
+}
+
+
+.vision-expertise {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.vision-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    width: 1000px;
+}
+
+.vision-text h2 {
+    font-size: 45px;
+}
+
+.vision-text p {
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+.read-more-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+.mission-section {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission-section h2 {
+    font-size: 45px;
+    width: 1000px;
+    margin: 0 auto 20px;
+}
+
+.white-line {
+    height: 2px;
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto 20px;
+}
+
+.mission-paragraph {
+    font-size: 25px;
+    width: 900px;
+    margin: 0 auto 40px;
+}
+
+.mission-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mission-box {
+    width: 30%;
+    height: 165px;
+    border: 1px solid white;
+    background-color: #1E1E1E;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.why-choose-us {
+    position: relative;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.why-choose-us-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.why-choose-us-text {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+    width: 1000px;
+}
+
+.why-choose-us-text h2 {
+    font-size: 45px;
+}
+
+.why-choose-us-text p {
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+
+.events-carousel {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.events-carousel h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 90%;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-img {
+    width: 1300px;
+    height: 400px;
+    margin: 0 10px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel-img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.more-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 43.61px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.highlight-box {
+    background-color: #f8f8f8;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+.info-section {
+    width: 30%;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 18px;
+}
+
+
+
+.info-section {
+    position: relative; /* Ensure the message can be positioned relative to this section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.info-section {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #f0f0f0;
+}
+
+.form-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+    max-width: 90%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.achievements-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.achievement {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.achievement:hover {
+    transform: translateY(-10px);
+}
+
+.achievement h3 {
+    font-size: 48px;
+    margin: 0 0 10px;
+    color: #B40000;
+}
+
+.achievement p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.testimonial-section {
+    background-color: #B40000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-box {
+    background-color: #B40000;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    color: white;
+}
+
+.testimonial-photo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.more-text {
+    display: none;
+}
+
+.more-link {
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    left: 10px;
+    bottom: 50px;
+    background-color: #028d02;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure the button is above the background image */
+}
+
+.floating-button:hover {
+    background-color: #900000;
+}
+
+
+
+
+footer {
+    background-color: #B40000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+
+
+
+
+
